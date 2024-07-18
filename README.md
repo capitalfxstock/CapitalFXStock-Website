@@ -1,2 +1,2 @@
-# CapitalFXStock-Website
-This is official website of Capital FX Stock
+**Capital FX Stock**
+This is Official Website of *Capital FX Stock*
