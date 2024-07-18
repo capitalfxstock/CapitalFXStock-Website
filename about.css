@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Playfair Display", serif;
+}
+
+.footer-line {
+    border: 2px solid rgb(110, 108, 108);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.line {
+    border: 2px solid red;
+    width: 400px;
+    position: relative;
+    left: 570px;
+    top: 25px;
+}
+
+.footer-line {
+    border: 2px solid rgb(110, 108, 108);
+}
+
+
+/* Header Section */
+#header {
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #ffffff;
+    box-shadow: 0 5px 15px rgb(0, 0, 0, 1);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#header img {
+    height: 150px;
+    width: 150px;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    position: relative;
+    list-style: none;
+    padding: 0 20px;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.5s ease-in-out;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: red;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 55%;
+    height: 2px;
+    background: green;
+    position: absolute;
+    bottom: -5px;
+    left: 20px;
+}
+
+#mobile {
+    display: none;
+    align-items: center;
+}
+
+#close {
+    display: none;
+}
+
+/* About Us */
+.about-text {
+    margin-top: 40px;
+}
+
+.about-text h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+.welcome-text {
+    position: relative;
+    padding: 20px 98px;
+}
+
+.welcome-text p {
+    font-weight: 400;
+    text-align: center;
+    font-size: 30px;
+}
+
+/* Testinomials Section */
+.testinomials {
+    background-color: #000;
+    height: 400px;
+}
+
+.testimonials-section {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.testimonials-section h2 {
+    position: relative;
+    top: 20px;
+    color: #ffffff;
+    font-size: 3em;
+    margin-bottom: 50px;
+}
+
+.testimonials-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.testimonial-card {
+    background-color: #fff;
+    color: #000;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 45%;
+    position: relative;
+    transition: 0.5s ease-in-out;
+}
+
+.testimonial-card:hover {
+    transition: 0.5s ease-in-out;
+    color: rgb(0, 0, 0);
+    box-shadow: 0px 0px 50px red;
+}
+
+.testimonial-card::before {
+    content: '“';
+    font-size: 3em;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: gray;
+}
+
+.testimonial-card p {
+    font-family: "DM Sans", sans-serif;
+    font-size: 1.1em;
+    line-height: 1.6em;
+    margin-top: 40px;
+}
+
+.testimonial-card .author {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.testimonial-card .author img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.testimonial-card .author span {
+    font-weight: bold;
+}
+
+.testimonial-card .author span.name {
+    color: #000080;
+}
+
+/* Our Mission , Our Vision Section */
+.ourmv {
+    position: relative;
+    margin-top: 20px;
+}
+
+.ourmv h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+.testimonials-section1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.testimonials-section1 h2 {
+    position: relative;
+    top: 20px;
+    color: #ffffff;
+    font-size: 3em;
+    margin-bottom: 50px;
+}
+
+.testimonials-container1 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.testimonial-card1 {
+    background-color: #fff;
+    color: #000;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 45%;
+    position: relative;
+    transition: 0.5s ease-in-out;
+}
+
+.testimonial-card1:hover {
+    transition: 0.5s ease-in-out;
+    color: rgb(0, 0, 0);
+    box-shadow: 0px 0px 30px green;
+}
+
+.testimonial-card1::before {
+    content: '';
+    font-size: 3em;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: gray;
+}
+
+.testimonial-card1 p {
+    font-family: "DM Sans", sans-serif;
+    font-size: 1.1em;
+    line-height: 1.6em;
+    margin-top: 40px;
+}
+
+.testimonial-card1 .author {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.testimonial-card1 .author img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.testimonial-card1 .author span {
+    font-weight: bold;
+}
+
+.testimonial-card1 .author1 span.name1 {
+    color: #000080;
+    font-size: 30px;
+}
+
+/* Banner Section */
+.banner {
+    display: flex;
+    background-color: #000;
+    color: #fff;
+    position: relative;
+    top: 20px;
+    height: 350px;
+    width: 1263px;
+}
+
+.banner-text img {
+    border-radius: 20px;
+    bottom: 70px;
+    left: 800px;
+    position: relative;
+    height: 200px;
+    width: 300px;
+    transition: 0.5s ease-in-out;
+}
+
+.banner-text img:hover {
+    cursor: pointer;
+    border: 5px solid white;
+    transition: 0.5s ease-in-out;
+}
+
+.banner-text h1 {
+    position: relative;
+    text-align: start;
+    font-size: 70px;
+    top: 30px;
+    left: 40px;
+}
+
+.banner-text p {
+    top: 80px;
+    position: relative;
+    text-align: start;
+    font-size: 20px;
+    left: 40px;
+}
+
+.banner-text a {
+    position: relative;
+    left: 40px;
+    top: -70px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00ff00;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.5s ease-in-out;
+}
+
+.banner-text a:hover {
+    background-color: #000;
+    color: #fff;
+    transition: 0.5s ease-in-out;
+}
+
+/* Footer */
+.footer-container {
+    position: relative;
+    margin-bottom: 20px;
+    height: 220px;
+    background-color: wheat;
+    top: 20px;
+}
+
+.contact h3 {
+        top: 10px;
+        font-size: 30px;
+        position: relative;
+        text-align: center;
+}
+
+.contact p {
+    font-size: 20px;
+    position: relative;
+    text-align: center;
+    font-family: "DM Sans", sans-serif;
+}
+
+.contact p a {
+    font-family: "DM Sans", sans-serif;
+}
+
+.contact p a:hover {
+    color: purple;
+}
+
+.footer-nav {
+    margin: 30px 0;
+    transition: 0.3s ease-in-out;
+}
+
+.footer-nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    transition: 0.3s ease-in-out;
+}
+
+.footer-nav ul li a {
+    transition: 0.3s ease-in-out;
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+    margin: 20px;
+    font-size: 25px;
+}
+
+.footer-nav ul li a:hover {
+    transition: 0.3s ease-in-out;
+    color: blue;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+/* Copyright Section */
+.copyright h1 {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 25px;
+}
+
+/* Media Query Of All Sections */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    #header {
+        width: 1280px;
+    }
+
+    #header img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .about-text {
+        width: 1280px;
+    }
+
+    .welcome-text {
+        width: 1280px;
+    }
+
+    .testinomials {
+        width: 1280px;
+    }
+
+    .ourmv {
+        width: 1280px;
+    }
+
+    .banner {
+        width: 1280px;
+    }
+
+    .footer-container {
+        width: 1280px;
+    }
+
+    .copyright h1 {
+        width: 1280px;
+    }
+
+    .footer-line {
+        width: 1280px;
+    }
+}
