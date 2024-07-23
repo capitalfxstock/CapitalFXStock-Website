@@ -23,6 +23,7 @@ html {
 .footer-line {
     border: 2px solid rgb(110, 108, 108);
 }
+
 /* 
 @media screen and (max-width: 1060px) {
     .footer-line {
@@ -1742,19 +1743,22 @@ button:hover {
 /* Media Queries for Mobile devices: 320px-480px */
 @media screen and (min-width: 220px) and (max-width: 480px) {
     #header {
-        width: 1100px;
+        width: 429px;
+        height: 70px;
     }
 
     #header img {
+        position: relative;
+        left: -50px;
         width: 100px;
         height: 100px;
     }
 
     .container1-image img {
-        height: 400px;
-        width: 400px;
-        left: 550px;
-        bottom: 10px;
+        height: 150px;
+        width: 150px;
+        bottom: 30px;
+        right: -50px;
     }
 
     .container1 {
@@ -1762,40 +1766,55 @@ button:hover {
     }
 
     .content h1 {
+        width: 400px;
+        font-size: 30px;
         position: relative;
-        left: 150px;
-        width: 450px;
+        /* left: 150px; */
+        /* width: 450px; */
     }
 
     .content p {
+        width: 200px;
         position: relative;
-        left: 150px;
-        width: 500px;
+        font-size: 15px;
     }
 
     .cta-button {
+        font-size: 15px;
         position: relative;
-        left: 150px;
         width: 120px;
     }
 
     .cta-apk {
+        font-size: 15px;
         position: relative;
-        left: 290px;
-        width: 125px;
-        bottom: 42px;
+        width: 120px;
+        bottom: 40px;
+        left: 130px;
     }
 
     .banner {
-        width: 1100px;
+        width: 429px;
+        height: 800px;
     }
 
-    .container3 , .sub-container4 , .container5 {
-        width: 1100px;
+    .container2 h1 {
+        font-size: 25px;
+    }
+
+    .container2 h1 span {
+        font-size: 25px;
+    }
+
+    .container3,
+    .container4,
+    .container5 {
+        width: 429px;
+        display: none;
     }
 
     .container5 {
-        height: 300px;
+        display: none;
     }
 
     .container3 .trading-image {
@@ -1870,52 +1889,193 @@ button:hover {
     }
 
     .portfolio-section {
-        width: 1100px;
+        width: 429px;
+        height: 400px;
+    }
+
+    .portfolio-section .text-content h3 {
+        width: 200px;
+        position: relative;
+        left: 65px;
+        top: -100px;
+    }
+
+    .portfolio-section .text-content h1 {
+        top: -100px;
+        position: relative;
+        left: 80px;
+        font-size: 20px;
+    }
+
+    .portfolio-section .text-content p {
+        position: relative;
+        text-align: center;
+        left: -50px;
+        top: -100px;
+        font-size: 10px;
+        width: 400px;
+    }
+
+    .portfolio-section .image-content img {
+        height: 170px;
+        width: 220px;
+        top: 100px;
+        left: -100px;
+        position: relative;
     }
 
     .trade-section {
-        width: 1100px;
+        width: 429px;
     }
 
-    .card1 , .card2 , .card3 {
-        width: 350px;
+    .card1,
+    .card2,
+    .card3 {
+        bottom: 20px;
+        position: relative;
+        width: 100px;
+        height: 100px;
+    }
+
+    .header-text p {
+        display: flex;
+    }
+
+    .card1 h2,
+    .card1 p {
+        position: relative;
+        display: none;
+    }
+
+    .card2 h2,
+    .card2 p {
+        display: none;
+    }
+
+    .card3 h2,
+    .card3 p {
+        display: none;
     }
 
     .invest-section {
-        width: 1100px;
+        width: 429px;
+    }
+
+    .card4 {
+        height: 100px;
+    }
+
+    .card4 h2 {
+        font-size: 15px;
+    }
+
+    .card4 p {
+        display: none;
+    }
+
+    .card5 h2 {
+        font-size: 15px;
+    }
+
+    .card5 {
+        height: 100px;
+    }
+
+    .card5 p {
+        display: none;
+    }
+
+    .card6 h2 {
+        font-size: 15px;
+    }
+
+    .card6 p {
+        display: none;
+    }
+
+    .card6 {
+        height: 100px;
     }
 
     .price {
-        width: 1100px;
+        width: 429px;
+    }
+
+    .container7 {
+        display: grid;
     }
 
     .app-image {
-        width: 1100px;
+        width: 429px;
     }
 
     .app-image img {
+        height: 250px;
+        width: 450px;
         position: relative;
-        left: 120px;
+        left: -10px;
+    }
+
+    .stat-item {
+        display: none;
+        left: 100px;
+        position: relative;
     }
 
     .review {
-        width: 1100px;
+        width: 429px;
     }
 
     .better {
-        width: 1100px;
+        height: 220px;
+        width: 429px;
+    }
+
+    .text-section8 span {
+        font-size: 16px;
+    }
+
+    .text-section8 h1 {
+        font-size: 12px;
+        text-align: center;
+        left: -50px;
+        position: relative;
+        top: -40px;
+    }
+
+    .image-section8 img {
+        display: none;
+    }
+
+    .text-section8 ul li {
+        font-size: 15px;
+        width: 200px;
+        text-align: center;
+        left: -50px;
+        bottom: 40px;
     }
 
     .footer-container {
-        width: 1100px;
+        width: 429px;
+    }
+
+    .footer-section .footer-nav {
+        text-align: center;
+        bottom: 20px;
+        position: relative;
+    }
+
+    .footer-section .footer-nav li a {
+        font-size: 15px;
     }
 
     .copyright h1 {
-        width: 1100px;
+        width: 429px;
+        font-size: 26px;
     }
 
     .footer-line {
-        width: 1100px;
+        width: 429px;
     }
 }
 
@@ -1939,61 +2099,61 @@ button:hover {
     /* Insert your CSS rules here */
 }
 
-@media screen and (min-width: 220px) and (max-width: 480px){
-#navbar {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    position: fixed;
-    font-size: 30px;
-    top: 0;
-    right: -300px;
-    height: 570px;
-    width: 180px;
-    background-color: rgb(213, 213, 213);
-    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
-    padding: 100px 0 0 20px;
-    transition: 0.4s ease-in-out;
-    border-radius: 10px;
-}
+@media screen and (min-width: 220px) and (max-width: 480px) {
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        font-size: 30px;
+        top: 0;
+        right: -300px;
+        height: 570px;
+        width: 180px;
+        background-color: rgb(213, 213, 213);
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 100px 0 0 20px;
+        transition: 0.4s ease-in-out;
+        border-radius: 10px;
+    }
 
 
-#navbar.active {
-    right: 0px;
-}
+    #navbar.active {
+        right: 0px;
+    }
 
-#navbar li {
-    margin-bottom: 25px;
-}
+    #navbar li {
+        margin-bottom: 25px;
+    }
 
-#mobile {
-    display: flex;
-    align-items: center;
-}
+    #mobile {
+        display: flex;
+        align-items: center;
+    }
 
-#close {
-    display: none;
-}
+    #close {
+        display: none;
+    }
 
-#mobile i {
-    color: #1a1a1a;
-    font-size: 24px;
-    padding-left: 20px;
-}
+    #mobile i {
+        color: #1a1a1a;
+        font-size: 24px;
+        padding-left: 20px;
+    }
 
-#close {
-    display: initial;
-    position: absolute;
-    top: 35px;
-    left: 40px;
-    color: black;
-    font-size: 30px;
-}
+    #close {
+        display: initial;
+        position: absolute;
+        top: 35px;
+        left: 40px;
+        color: black;
+        font-size: 30px;
+    }
 
-#hero {
-    height: 70vh;
-    padding: 0px 80px;
-    background-position: top 30% right 30%;
-}
+    #hero {
+        height: 70vh;
+        padding: 0px 80px;
+        background-position: top 30% right 30%;
+    }
 }
